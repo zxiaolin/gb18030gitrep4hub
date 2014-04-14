@@ -1,0 +1,2050 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>GB18030 Conformance Test Plan for IBM Cognos Business Intelligence 10.2</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:NSimSun-18030;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@NSimSun-18030";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"\6807\9898 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h2
+	{mso-style-link:"\6807\9898 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h3
+	{mso-style-link:"\6807\9898 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"\9875\7709 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"\9875\811A Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.1Char
+	{mso-style-name:"\6807\9898 1 Char";
+	mso-style-link:"\6807\9898 1";
+	font-family:SimSun;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"\6807\9898 2 Char";
+	mso-style-link:"\6807\9898 2";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.3Char
+	{mso-style-name:"\6807\9898 3 Char";
+	mso-style-link:"\6807\9898 3";
+	font-family:SimSun;
+	font-weight:bold;}
+span.Char
+	{mso-style-name:"\9875\7709 Char";
+	mso-style-link:\9875\7709;
+	font-family:SimSun;}
+span.Char0
+	{mso-style-name:"\9875\811A Char";
+	mso-style-link:\9875\811A;
+	font-family:SimSun;}
+p.msolistparagraph0, li.msolistparagraph0, div.msolistparagraph0
+	{mso-style-name:msolistparagraph;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:21.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN link=blue vlink=blue>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'><span lang=EN-US>GB18030 Conformance
+Test Plan</span></h1>
+
+<h1 align=center style='text-align:center'><span lang=EN-US>for IBM Cognos
+Business Intelligence 10.2 </span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US>Version
+1.2</span></b><span lang=EN-US> </span></p>
+
+<p align=center style='text-align:center'><b><span lang=EN-US>Date:</span></b><span
+lang=EN-US> 05/31/2012 </span></p>
+
+<p align=center style='margin-bottom:12.0pt;text-align:center'><b><span
+lang=EN-US>Owner: Xiao Lin Zhao/China/Contr/IBM</span></b><span lang=EN-US><br>
+IBM China Software Development Lab </span></p>
+
+<div>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:10.5pt'>Security
+Notice:</span></b></p>
+
+</div>
+
+<p><span lang=EN-US><br>
+This document contains information of a proprietary nature.&nbsp;<b>ALL
+INFORMATION CONTAINED HEREIN SHALL BE KEPT IN CONFIDENCE.</b> None of this
+information shall be divulged to persons other than IBM employees authorized by
+the nature of their duties to receive such information, or individuals of
+organizations authorized by IBM Corporation in accordance with existing policy
+regarding release of company information. </span></p>
+
+<h2><span lang=EN-US>Table of Contents</span></h2>
+
+<p class=MsoNormal><span lang=EN-US><a href="#1">1 DOCUMENT CONTROL INFORMATION</a>
+<br>
+<a href="#2">2 INTRODUCTION</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#2.1">2.1 PURPOSE OF THIS DOCUMENT</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#2.2">2.2 SCOPE</a> <br>
+<a href="#3">3 ENVIRONMENT SETUP</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#3.1">3.1 TARGET ENVIRONMENT</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#3.2">3.2 HARDWARE</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#3.3">3.3 SOFTWARE REQUIREMENTS</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#3.4">3.4 TESTING TOOLS AND AUTOMATION TEST</a> <br>
+<a href="#4">4 TEST DEFINITIONS</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#4.1">4.1 TEST SCOPE</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#4.2">4.2 TEST COVERAGE</a> <br>
+<a href="#5">5 PROJECT MANAGEMENT</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#5.1">5.1 ENTRY AND EXIT CRITERIA</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#5.2">5.2 TEST SCHEDULE</a> <br>
+<a href="#Bug">6 DEFECT MANAGEMENT</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#6.1">6.1 DEFECT IDENTIFICATION</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="#6.2">6.2 DEFECT REPORTING AND TRACKING</a> </span></p>
+
+<p class=MsoNormal><span lang=EN-US><br>
+<a href="#AppA">APPENDIX A: DEFECT DEFINITION FOR GB18030 COMPLIANCE TEST</a> </span></p>
+
+<h2><a name=1></a><span lang=EN-US>1 Document Control Information</span></h2>
+
+<p><span lang=EN-US>Users of this document are personally responsible for using
+the official version, and for continuously verifying that any copies of the
+document in whole or in part, are the official version.&nbsp; If this document
+is not a copy of the official version it is obsolete. </span></p>
+
+<p><b><i><span lang=EN-US>Current Authors/Updaters List </span></i></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal><span lang=PT-BR>Xiao Lin Zhao/China/Contr/IBM</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=PT-BR>&nbsp;</span></p>
+
+<p class=MsoNormal><b><i><span lang=EN-US>Approver List</span></i></b><span
+lang=EN-US> </span></p>
+
+<table class=TableNormal border=1 cellpadding=0 width=500 style='width:375.0pt'>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Date Approved</span></b><span
+  lang=EN-US> <br>
+  &nbsp;(mm/dd/yyyy)</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Name, Position/Area</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;Yilan Yang/Ottawa/IBM</span></p>
+  </td>
+ </tr>
+</table>
+
+<p><b><i><span lang=EN-US>Reviewer List</span></i></b><span lang=EN-US> </span></p>
+
+<table class=TableNormal border=1 cellpadding=0 width=500 style='width:375.0pt'>
+ <tr>
+  <td width=129 style='width:96.4pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b><span lang=EN-US>&nbsp;Name</span></b></p>
+  </td>
+  <td width=365 style='width:274.1pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b><span lang=EN-US>&nbsp;Role/Responsibility,
+  Component/Project</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=129 style='width:96.4pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=365 style='width:274.1pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p><b><i><span lang=EN-US>Revision History / Summary of Changes</span></i></b><span
+lang=EN-US> </span></p>
+
+<table class=TableNormal border=1 cellpadding=0 width=600 style='width:450.0pt'>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b><span lang=EN-US>&nbsp;Change Date</span></b></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><b><span lang=EN-US>&nbsp;Change Description</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;05/23/2012</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Version 1.0, initial draft</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;05/25/2012</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Version 1.1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;05/31/2012</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Version 1.2</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name=2></a><span lang=EN-US>2 Introduction</span></h2>
+
+<h3><a name=2.1></a><span lang=EN-US>2.1 Purpose of this Document</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>The purpose of this document is to provide
+the reader with information on the test objectives, methodology, test coverage,
+schedules, criteria and requirements of the GB18030 conformance test
+for&nbsp;IBM Cognos Business Intelligence 10.2 on Chinese environment as
+described below.&nbsp; This test will be performed by China Software
+Development Lab (CSDL).</span></p>
+
+<h3><a name=2.2></a><span lang=EN-US>2.2 Scope</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>The test plan will list all assertions
+required for testing the&nbsp;IBM Cognos Business Intelligence 10.2. </span></p>
+
+<p><span lang=EN-US>The objective is to verify the following: </span></p>
+
+<ul type=disc>
+ <li class=MsoNormal><span lang=EN-US>Existing functions work correctly for
+     GB18030 conformance in the localized environment.</span></li>
+</ul>
+
+<p class=MsoNormal><span lang=EN-US>The test plan will also detail the environment
+requirements to run the tests. <br>
+&nbsp; </span></p>
+
+<h2><a name=3></a><span lang=EN-US>3 Environment Setup</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>The test environment will install IBM
+Cognos Business Intelligence 10.2 on the operating system which support
+GB18030(performed by Cognos Team) and tester will access the environment from LabManager.
+</span></p>
+
+<h3><a name=3.1></a><span lang=EN-US>3.1 Target Client Environment(used to
+connect to LabManager)</span></h3>
+
+<table class=TableNormal border=1 cellspacing=0 cellpadding=0 width="60%"
+ style='width:60.0%;border-collapse:collapse;border:none' cols=3>
+ <tr>
+  <td style='border:inset #111111 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><b><span lang=EN-US>Operating System</span></b></p>
+  </td>
+  <td style='border:inset #111111 1.0pt;border-left:none;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><b><span lang=EN-US>Processor Architecture</span></b></p>
+  </td>
+  <td style='border:inset #111111 1.0pt;border-left:none;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><b><span lang=EN-US>Window System</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:inset #111111 1.0pt;border-top:none;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>&nbsp;Windows Server 2008 R2_SP1_x64</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:inset #111111 1.0pt;
+  border-right:inset #111111 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Intel x64</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:inset #111111 1.0pt;
+  border-right:inset #111111 1.0pt;padding:0cm 0cm 0cm 0cm'></td>
+ </tr>
+</table>
+
+<h3><a name=3.2></a><span lang=EN-US>3.2 Hardware</span></h3>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>RAM: 8G</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>HDD: 60G </span></p>
+
+<h3><a name=3.3></a><span lang=EN-US>3.3 Software Requirements</span></h3>
+
+<p class=MsoNormal style='margin-left:12.0pt'><b><span lang=EN-US>IBM Cognos Business
+Intelligence 10.2</span></b></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><b><span lang=EN-US>   </span></b><span
+lang=EN-US>Use the latest build</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><b><span lang=EN-US>Operation
+System</span></b><span lang=EN-US> </span></p>
+
+<p class=MsoNormal style='margin-left:12.0pt'><span lang=EN-US>   &nbsp;Windows
+Server 2008 R2_SP1_x64</span></p>
+
+<h3><a name=3.4></a><span lang=EN-US>3.4 Testing Tools and Automation Test</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>No testing tools are used. </span></p>
+
+<h2><a name=4></a><span lang=EN-US>4 Test Definitions</span></h2>
+
+<h3><a name=4.1></a><span lang=EN-US>4.1 Test Scope</span></h3>
+
+<p class=MsoNormal><b><span lang=EN-US>GB18030 Conformance Test will be
+composed of the following scope:</span></b><span lang=EN-US> </span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><a name=4.2></a><span
+lang=EN-US style='font-size:10.5pt'>- Input</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Display</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Edit</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Storage</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Conversion</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Print</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Strings handling</span></p>
+
+<h3><span lang=EN-US>4.2 Test Coverage</span></h3>
+
+<p class=MsoNormal><b><span lang=EN-US>Above scope will cover the following
+components of IBM Cognos Business Intelligence 10.2:</span></b><span
+lang=EN-US> </span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><a name=5></a><span
+lang=EN-US style='font-size:10.5pt'>- iPad</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Cognos Admin</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Cognos Configuration</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Cognos Workspace (Business Insight)</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Cognos Workspace Advanced (Business Insight Advance)</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Report Studio</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Life Cycle Manager</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Real-Time Monitoring</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Dynamic Query Analyzer</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Framework Manager</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Cognos Cube Designer(FMDesigner)</span></p>
+
+<p class=msolistparagraph0 style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:6.0pt;margin-left:15.95pt;text-indent:0cm'><span lang=EN-US
+style='font-size:10.5pt'>- Cognos for MS Office</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:30.0pt'><span lang=NL style='font-size:10.5pt'>&nbsp;</span></p>
+
+<table class=TableNormal border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%'>
+ <tr>
+  <td width="20%" style='width:20.0%;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Feature Category</span></b></p>
+  </td>
+  <td width="9%" style='width:9.0%;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Testcase ID</span></b></p>
+  </td>
+  <td width="71%" style='width:71.0%;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Brief Description</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=16 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>iPad</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 characters showing in
+  directory name are correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 characters showing in
+  report name are correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Run the GB18030 report and verify there
+  is no problem</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Run Query Studio report and verify the
+  GB18030 chars in it can display correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Run Report Studio report and verify the
+  GB18030 chars in it can display correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Run Analysis Studio report and verify the
+  GB18030 chars in it can display correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars show properly in
+  Recently run reports tab</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars of the column/row
+  header information in context toolbar value is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD09</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Select drill down and verify GB18030
+  chars in all values are correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD10</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars in CascadingPrompt
+  show correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD11</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Render TreePrompt report and drill down
+  to the section &quot;DOS-TLS-020&quot;, verify the GB18030 display correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD12</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars in each buttons
+  label of Active report display correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD13</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify reports can be searched properly
+  with GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD14</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Run InlinePrompt report, filter with
+  GB18030 chars and verify the result is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD15</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Run Burst report and  verify GB18030 in
+  it can display correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102PD16</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars in the reports name
+  can show properly in notifications</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=8 style='border:inset 1.0pt;border-bottom:none;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Cognos Admin</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  ROLAP base/virtual cube name and description</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify startup trigger name can contain
+  GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars show correctly in
+  &quot;Dependent cubes&quot; metric</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Add ROLAP cube configurations which
+  containing cubes with GB18030 chars in name</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Edit Server group parameter with GB18030
+  chars and save</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create QSAT and input GB18030 chars in
+  name and description field</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Select GB18030 server group created above
+  and pick a GB18030 cube from the list</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CA08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Schedule the QSAT and verify it could
+  work well</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=8 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Cognos Configuration</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create resource destination from Explorer
+  pane and name it with GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create new database resource and name it
+  with GB18030 chars, select a supported logging database</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Run &quot;Check for supported
+  Software&quot; for &quot;Audit Logging Database&quot;, verify this will not
+  be affacted by GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Select an unsupported logging database
+  and run &quot;Check for supported Software&quot;, verify proper warning
+  generated</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create resource namespace and name it
+  with GB18030 chars, verify the display is correct in Explorer pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Edit the Namespace properties with
+  GB18030 chars, verify the display is correct in property pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Right-click the newly created namespace
+  and test, verify the display of GB18030 chars in warning message</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102CC08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify &quot;Check for the Supported
+  Software&quot; can be run on a folder with GB18030 chars for a supported WAS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=29 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Cognos Workspace (Business Insight)</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create a new folder under Public Folders
+  and name it with GB18030 chars, verify the chars display correctly in Content
+  Pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Rename the folder or report with GB18030
+  chars, verify the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Edit the path to the image with GB18030
+  chars, verify the image could display correctly in the Preview</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Customize the lable with GB18030 chars,
+  verify the display on the button is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  tab name</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  widget name</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  Go To list</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Save a workspace with GB18030 chars and
+  save it in GB18030 folder</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX09</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Reopen the workspace from that folder and
+  verify all GB18030 chars show properly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX10</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 workspace can be set as
+  favorite</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX11</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Rename tab with GB18030 chars and verify
+  the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX12</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly
+  for the tab name and widget name in Listen for Widget Events dialogue</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX13</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Narrow down the width of browser and
+  verify GB18030 chars in Go To list show properly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX14</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Rename column with GB18030 chars, verify
+  the display in infobar</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX15</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars show correctly in
+  widget title and data item of Slider filter</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX16</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Edit descriptive value with GB18030 chars
+  and verify the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX17</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars show correctly in
+  widget title and data item of Select value filter</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX18</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Search workspace with GB18030 chars in
+  Content pane and verify the result is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX19</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Rename GB18030 column header and save,
+  verify the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX20</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Start an Activity from collaboration and
+  input GB18030 chars in name and Activity goal field</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX21</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Save and verify the GB18030 display
+  correctly in message box</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX22</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Return to BUX and view activity, verify
+  GB18030 chars in activity name is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX23</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Select more and verify GB18030 chars
+  display correctly in activity goal</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX24</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Export report from BUX and verify all
+  GB18030 chars show properly after exporting</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX25</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Edit widget properties with GB18030
+  chars, verify the display is correct in widget and listen for dialogue</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX26</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Select &quot;Do More...&quot; in BUX,
+  verify GB18030 chars show properly in BIA</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX27</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Get back to BUX and verify the chars
+  display correctly as the deal</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX28</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  widget comments</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102BUX29</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  Prompt dialogue</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=11 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Cognos Workspace Advanced (Business
+  Insight Advance)</span></p>
+  <p class=MsoNormal><span lang=EN-US>Report Studio</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify that GB18030 characters can be
+  used in the No Data Contents dialog</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify that GB18030 characters can be
+  used in the No Data tab</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify that Section/Unsection works on a
+  column with GB18030 characters in its name</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify that GB18030 characters can be
+  used in section Data item name property</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars can be used as the
+  section data item name and can be correctly displayed in the property field</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify that GB18030 characters can be
+  used in Data item label property and the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 characters can be used in
+  the Edit Label dialog and correctly displayed in the report in preview or run
+  outputs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify that frame names with GB18030
+  characters can be correctly displayed in BUXC Content pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB09</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 characters can be entered
+  and displayed correctly in Design view</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB10</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 characters can be used for
+  the Parameter name and the prompt works properly when the report is running</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RSB11</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>New a custom group and name it with
+  GB18030 chars, verify the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=12 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Life Cycle Manager</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create validation project and save it with GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Close the validation project and reopen, verify the
+  GB18030 chars show correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Generate Report list from validation project</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars in folder/package/report names show
+  correctly in all tabs for validation project</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create benchmark project and generate report list</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars in folder/package/report names show
+  correctly in all tabs for benchmark project</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars in report names display correctly in
+  GWT mode of Task Summary for validation project</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars in report names
+  display correctly in GWT mode of Task Summary for benchmark project</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM09</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars in report names display correctly in
+  Flash mode of Task Summary for benchmark project</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM10</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars in report names display correctly in
+  Flash mode of Task Summary for validation project</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM11</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify LCM can perform all operations for validation
+  project through CLI when the command contains search path with GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102LCM12</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify LCM can perform all operations for benchmark
+  project through CLI when the command contains search path with GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=11 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Real-Time Monitoring</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create an Agent and name it with GB18030
+  chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create Lookup Table associating the Agent above and input
+  GB18030 chars in name and description field</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Edit the description of datastream with GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create a Stateful view, select GB18030 datastream and
+  lookup table</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Input GB18030 chars in view name and description, save
+  and verify the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create a folder and name with GB18030 chars, verify the
+  display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create cube based on GB18030 datastream and input GB18030
+  chars in name and description field</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create dimension based on GB18030 Lookup table and input
+  GB18030 chars in name and description field</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM09</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars in columns of the fact table and the
+  selected level dimension in result page display correctly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM10</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Export metadata to JAR file and save as GB18030 name</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102RTM11</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Import metadata from that JAR file and verify it is
+  successful</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=4 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Dynamic Query Analyzer</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102DQA01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  Content Store pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102DQA02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Run the Aggregate Advisor, verify GB18030 chars in the
+  rolap cube display correctly in the first panel</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102DQA03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Generate a result, verify GB18030 chars display correctly
+  in the results editor page and results history view</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102DQA04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify the rusult can be saved and named with GB18030
+  chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=20 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Framework Manager</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify a FM project can be created using
+  MDA with GB18030 characters as its name</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Create a FM model and new a data source, name it with
+  GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Select the data source and import, verify GB18030 chars
+  display correctly in project viewer, Properties pane and diagram</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Verify GB18030 chars show correctly for both metadata and
+  data</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Verify GB18030 chars can be used in Expression Editor</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Verify GB18030 chars display correctly in error messages</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Verify GB18030 chars display correctly in &quot;Verify
+  Model&quot; dialog</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Create floder and include GB18030 query subjects</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM09</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Run model advisor and verify there is no error, GB18030
+  chars can show properly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM10</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Verify GB18030 chars display correctly in Business View
+  and Technical View of Lineage UI</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM11</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Edit dimension name with GB18030 chars and verify the
+  display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM12</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Edit Hierarchy and Level with GB18030 chars and verify
+  the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM13</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Verify GB18030 characters can be used as the relationship
+  name</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM14</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Create a GB18030 folder under public floder</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM15</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-GB>Create a package and name it with GB18030 chars and
+  publish, select the floder created above</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM16</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars display correctly in “Analyze
+  Publish Impact” dialog</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM17</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars display correctly in &quot;Model
+  Report&quot; dialog</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM18</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars display correctly in &quot;View
+  Transaction History&quot; dialog</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM19</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars can be used in Filter Expression and
+  show properly in &quot;Specify Data Security&quot; UI</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FM20</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Verify GB18030 chars display correctly in the message log
+  after exporting to CWM</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=16 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Cognos Cube Designer (FMDesigner)</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>New a Project and edit the name with GB18030 chars in
+  Properties pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Edit the Model name with GB18030 chars and verify the
+  display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p><span lang=EN-US>Create Namespace and name with GB18030 chars, verify the
+  display in Project Explorer Pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create Folder and name with GB18030
+  chars, verify the display in Project Explorer Pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Create Vitual Cube and name with GB18030
+  chars, verify the display in Project Explorer Pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Create a cube and new objects like
+  dimensions, hierarchies, levels, measures, attribute with names containing
+  GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Edit the comment of objects with GB18030
+  chars, verify the display is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Include datasources containing GB18030
+  chars into packages, verify data retrieved and displayed properly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD09</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Create Parent Child Dimension and name
+  with GB18030 chars, verify the display in Project Explorer Pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD10</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Define parent child hierarchy(parent
+  item, child item...) with data which containing GB18030 chars and validate</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD11</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Create Aggregate Cube and name with
+  GB18030 chars, verify the display in Project Explorer Pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD12</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Generate cube and create new Aggregate
+  cube and include GB18030 fact items in current cube</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD13</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Design Aggregate Cube and validate,
+  verify no error caused by GB18030 chars and the display in all kinds of
+  message prompts is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD14</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Design any issues and verify GB18030
+  chars show correctly in Issue pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD15</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Save the project and name with GB18030
+  chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102FMD16</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-GB>Reopen the project and verify GB18030
+  chars in all objects show properly</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td rowspan=8 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Cognos for MS Office</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC01</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Add a BI server in Options Tab and input
+  GB18030 chars in friendly name field</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC02</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Verify GB18030 chars display correctly in
+  BI Content and Manage Data pane</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC03</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Import a report and give the name as
+  GB18030 chars, verify the display in Excel</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC04</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Add a name to title's properties of a
+  GB18030 report in BI and import to COC word, then remove the report title in
+  BI</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC05</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Refresh report structure in COC, verify
+  the refresh is successful and GB18030 chars in message is correct</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC06</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Save the report with extension .xlsb and
+  name with GB18030 chars</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC07</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Publish the report to GB18030 location
+  and import the published report</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>BI102COC08</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span lang=EN-US>Create GB18030 user and identify the
+  access permissions to folders/reports, verify it works well</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:30.0pt'><span lang=EN-US style='font-size:10.5pt'>&nbsp;</span></p>
+
+<h2><span lang=EN-US>5 Project Management</span></h2>
+
+<h3><a name=5.1></a><span lang=EN-US>5.1 Entry and Exit Criteria</span></h3>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:13.5pt'>Entry Criteria</span></b><span
+lang=EN-US> </span></p>
+
+<ul type=disc>
+ <li class=MsoNormal><span lang=EN-US>Approved GB18030 conformance test&nbsp;
+     plan is available.</span></li>
+ <li class=MsoNormal><span lang=EN-US>The test cases are available for review
+     and accepted by development team.</span></li>
+ <li class=MsoNormal><span lang=EN-US>The test environment is available and
+     setup properly</span></li>
+ <li class=MsoNormal><span lang=EN-US>A problem tracking system is setup
+     properly and account for testing is available.</span></li>
+ <li class=MsoNormal><span lang=EN-US>The product build is available.</span></li>
+</ul>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:13.5pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:13.5pt'>Exit Criteria</span></b><span
+lang=EN-US> </span></p>
+
+<ul type=disc>
+ <li class=MsoNormal><span lang=EN-US>All planned testcases have been
+     successfully executed.</span></li>
+ <li class=MsoNormal><span lang=EN-US>All blocking defects and&nbsp;
+     Severity1/Severity2 defects will be fixed by development team. In case
+     there are any blocking and Severity1/Severity2 defects are still in
+     open,&nbsp; the agreement should be reached among development team and
+     test team.</span></li>
+ <li class=MsoNormal><span lang=EN-US>Regarding the other remaining open
+     defects Severity3/Severity4, they should be disposed properly by
+     development team and&nbsp; proper action plan should be established.</span></li>
+</ul>
+
+<h3><a name=5.2></a><span lang=EN-US>5.2 Test Schedule (Information Only)</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>This section lists the major test schedule.
+</span></p>
+
+<table class=TableNormal border=1 cellpadding=0 cols=3 id=table2>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Key Dates ( Deliverables / Checkpoints / Milestones)</span></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Owner</span></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Planned Date</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>The test plan available for review</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>GB18030
+  Team</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>05/23/2012</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>The test plan approved</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>Cognos
+  Team</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>05/31/2012</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>GB18030 conformance test </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>GB18030
+  Team</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>06/01/2012</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Defect fix and verification completion </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>Cognos/GB18030
+  Team</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>06/26/2012</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Conformance test end </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>GB18030
+  Team</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>06/29/2012</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US>Archive conformance report and send close
+  mail </span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>GB18030
+  Team</span></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>07/10/2012</span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span lang=EN-US>&nbsp;</span></p>
+
+<h2><a name=Bug></a><span lang=EN-US>6 Defect Management</span></h2>
+
+<h3><a name=6.1></a><span lang=EN-US>6.1 Defect Identification</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>Problems with&nbsp;IBM Cognos Business
+Intelligence 10.2 will be identified based upon analysis of test case results
+and other observations of the tester. Product operation which contradicts the
+product documentation and GB18030 compliance will be considered as a defect. </span></p>
+
+<p><span lang=EN-US>The originator of a defect must provide complete and
+detailed descriptions of any problem found, as well as instructions on problem
+reproduction, the build level used when the failure occurred, the type of
+hardware and software being used, etc. </span></p>
+
+<p><a name=6.2></a><b><span lang=EN-US style='font-size:13.5pt'>6.2 Defect
+Reporting and Tracking</span></b><span lang=EN-US> </span></p>
+
+<p><span lang=EN-US>The problems found during the IBM Cognos Business
+Intelligence 10.2 GB18030 conformance test will be reported as defects using
+TCT. TCT will be used to report suspected problems, and to track those problems
+and their resolutions. </span></p>
+
+<p><span lang=EN-US>All defects must be prefixed by &quot;GB18030&quot; in the
+abstract. If a defect is determined to be blocking defect, the originator
+should use&nbsp;the keyword tab, entering both Blocking and GB18030 as keywords
+for more proficient query. </span></p>
+
+<h2><a name=AppA></a><span lang=EN-US>Appendix A: Defect Definition for GB18030
+Compliance Test </span></h2>
+
+<table class=TableNormal border=1 cellpadding=0 width=713 style='width:534.75pt'>
+ <tr>
+  <td width=62 style='width:46.5pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Severity</span></p>
+  </td>
+  <td width=234 style='width:175.5pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Description</span></p>
+  </td>
+  <td width=482 style='width:361.5pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Supplementary description for GB18030</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>1 - Critical</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Catastrophic or complete system failure;
+  any fatal error where the application or operating system hangs,
+  unrecoverable application error, a function that is not available (cannot
+  open) for testing.</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Critical I18N design issue that is
+  required any design change to resolve, that leads to the product is not aware
+  of GB18030. </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>2 - Serious</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>The system or application fails to
+  correctly process a transaction causing an incorrect transaction to occur;
+  loss or corruption of data; incorrect output; breach in security; unacceptable
+  application response times.</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>loss or corruption of GB18030 data;
+  GB18030 character rendering problem on all of product GUIs.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>3 - Moderate</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Output are misleading or redundant; partial
+  failure (mouse, keyboard, short-cut keys, etc.), poor response times.</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>GB18030 character rendering problem, such
+  as all GB18030 chars displayed as square marks.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p><span lang=EN-US>4 -Mild</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p class=MsoNormal><span lang=EN-US>Misspellings; incorrect grammar; poor
+  readability due to font size or type; suggestions for improvement.</span></p>
+  </td>
+  <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <p><span lang=EN-US>Minor display problem.</span></p>
+  </td>
+ </tr>
+</table>
+
+<h2><span lang=EN-US>End of Document</span></h2>
+
+</div>
+
+</body>
+
+</html>

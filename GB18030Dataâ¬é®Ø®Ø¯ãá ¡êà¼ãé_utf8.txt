@@ -1,0 +1,113 @@
+﻿Section No.	Glyphs					Mandatory
+1		成我戒戓戔戕或戗战戙戚戛戜戝戞戟	Y
+2		abcdefghijklmno				Y
+3		㐀㐁㐂㐃㐄㐅㐆㐇㐈㐉㐊㐋㐌㐍㐎㐏	Y
+4		€					Y
+5		亐亖亗亙亜亝亞				Y
+6		⺁⺄⺈⺋⺌⺗⺧⺪⺮⺳⺶⺷⺻⻊		Y
+7		㖞㘚㘎⺗㥮㤘㧏㧟㩳㧐㭎㱮㳠	Y
+8		郎凉秊裏隣兀嗀﨎﨏			Y
+9		ⅠⅡⅢⅣⅤⅰⅱⅲⅳⅴ			Y
+10		ᠠᠡᠢᠣᠤᠥᠦᠧᠨᠩ			N
+11		ꀇꀈꀉꀊꀋꀌꀍꀎꀏ			N
+12		༐༑༒༓༔༕༖༗༘༙			N
+13		بةتثجحخد					N
+14		狢狣狤狥狦狧狪狫			Y
+15		㊣					Y
+16		﹔﹕﹖﹗				Y
+17		通桐酮瞳同铜彤童			Y
+18							N
+
+
+Section No.	GB18030 code point
+1		B3C9,CED2,BDE4,91E1,91E2,E3DE,BBF2,EAA8,D5BD,91E3,C6DD,EAA9,91E4-91E6,EAAA
+2		61-6F
+3		8139EE39,8139EF30-8139EF39,8139F030-8139F034
+4		A2E3
+5		8180-8186
+6		FE50,FE54,FE57,FE58,FE5D,FE5E,FE6B,FE6E,FE71,FE73-FE75,FE79,FE84
+7		FE5A-FE5C,FE5E-FE6A
+8		FD9C-FD9F,FDA0,FE40-FE43
+9		A2F1-A2F5,A2A1-A2A5
+10		8134D630-8134D639
+11		82359930-82359938
+12		8132EA30-8132EA39
+13		81318430-81318417
+14		AA43-AA48
+15		A949
+16		A972-A975
+17		CDA8-CDAF
+18		ABE1-ABEF,ABF0-ABF2
+
+Section No.	Unicode block			Unicode code point
+1		CJK Unified Ideograph		6210-621F
+2		Basic Latin			61-6F
+3		CJK Unified Ideograph Ext-A	3400-340F
+4		Euro sign			20AC  
+5		CJK Unified Ideograph		4E90,4E96,4E97,4E99,4E9C-4E9E
+6		CJK Radicals Supplement		2E81,2E84,2E88,2E8B,2E8C,2E97,2EA7,2EAA,2EAE,2EB3,2EB6,2EB7,2EBB,2ECA
+7		CJK Unified Ext-A&PUA	359E,361A,360E,2E97,396E,3918,E826,39CF,39DF,3A73,39D0,E82B,E82C,3B4E,3C6E,3CE0
+8		CJK Compatibility Ideograph	F92C,F979,F995,F9E7,F9F1,FA0C-FA0F
+9		Number Forms			2160-2164,2170-2174
+10		Mongolian			1820-1829
+11		Yi Syllables			A007-A00F
+12		Tibetan				0F10-0F19
+13		Arabic				0628-062F
+14		CJK Unified Ideograph		72E2-72E7,72EA,72EB
+15		Enclosed CJK Letters and Months	32A3
+16		Small Form Variants		FE54-FE57
+17		CJK Unified Ideograph		901A,6850,916E,77B3,540C,94DC,5F64,7AE5
+18		Private Use Area		E0A7-E0AF
+
+>>Test data coverage rules in one test scenario:
+1. For encoding conversion function, please cover all data.
+2. For document process, including file transfer, display, editing, please cover all data.
+3. Input entry filed
+  3.1 For input entry filed >= 30k bytes, please cover all data.
+  3.2  For 1k< input entry filed <30k, please cover all sample data sections from No.1 toNo.16.
+  3.3  For input entry filed <= 1k bytes,  please cover at lease one character from each mandatory section and at lease one character from all optional sections.
+4. For I/O releated opertion, please follow 3.3 to name destination object (file, directory, dev, etc.).
+
+>>Note:
+1. All data means the data in all files under directory FullData.
+2. Tester can copy/paste test data, or using IEM. The 'GB18030 code point' and 'Unicode code point' columns give out the GB18030 and Unicode code point of each character in 'Glygh' column by order. Tester may refer to it when using IME.
+3. The test data in section No.18 do not have glyph. 
+4. Different fonts provide differeent glyphs, the prefered fonts for GB18030 test are SimSun-18030 and NSimSun-18030.
+
+
+>>Sample data follow Rule 3.2
+One line:
+成我戒戓戔戕或戗战戙戚戛戜戝戞戟abcdefghijklmno㐀㐁㐂㐃㐄㐅㐆㐇㐈㐉㐊㐋㐌㐍㐎㐏€亐亖亗亙亜亝亞⺁⺄⺈⺋⺌⺗⺧⺪⺮⺳⺶⺷⺻⻊㖞㘚㘎⺗㥮㤘㧏㧟㩳㧐㭎㱮㳠郎凉秊裏隣兀嗀﨎﨏ⅠⅡⅢⅣⅤⅰⅱⅲⅳⅴᠠᠡᠢᠣᠤᠥᠦᠧᠨᠩꀇꀈꀉꀊꀋꀌꀍꀎꀏ༐༑༒༓༔༕༖༗༘༙بةتثجحخد狢狣狤狥狦狧狪狫㊣通桐酮瞳同铜彤童﹔﹕﹖﹗
+
+Milti line:
+成我戒戓戔戕或戗战戙戚戛戜戝戞戟
+abcdefghijklmno
+㐀㐁㐂㐃㐄㐅㐆㐇㐈㐉㐊㐋㐌㐍㐎㐏
+€
+亐亖亗亙亜亝亞
+⺁⺄⺈⺋⺌⺗⺧⺪⺮⺳⺶⺷⺻⻊
+㖞㘚㘎⺗㥮㤘㧏㧟㩳㧐㭎㱮㳠
+郎凉秊裏隣兀嗀﨎﨏
+ⅠⅡⅢⅣⅤⅰⅱⅲⅳⅴ
+ᠠᠡᠢᠣᠤᠥᠦᠧᠨᠩ
+ꀇꀈꀉꀊꀋꀌꀍꀎꀏ
+༐༑༒༓༔༕༖༗༘༙
+بةتثجحخد
+狢狣狤狥狦狧狪狫
+㊣
+通桐酮瞳同铜彤童
+﹔﹕﹖﹗
+
+
+>>Sample data follow Rule 3.3
+Sample data 1	通€㐀ᠠꀇ༐بة㊣郂
+Sample data 2	€酮خد㐁ᠡꀈ༑㘚郂
+Sample data 3	€㐂دᠢꀉ༒通郂
+Sample data 4	a€㐃㐄ᠣꀊꀋꀌ桐༓༔༕بةتثجحخد㊣﹔﹕﹖我嗀狦郂
+Sample data 5	㘎€b㐅㐆ᠤꀍ༖瞳༗بةتثخد郂
+Sample data 6	秊€㐇༘༙同ᠥꀎبةتثجحخد郂
+Sample data 7	€铜ꀏc㐊ᠦ༘༙بةتد秊郂
+Sample data 8	㊣€㐋ᠧᠨᠩ༘༙بةتثجحد铜郂
+Sample data 9	بةحخد༘༙€㐌ꀏ㐍ᠧᠨᠩ⺌彤郂
+Sample data 10	⺌童༘༙€㐎d㐏ᠧᠨᠩꀏحخد郂
+
